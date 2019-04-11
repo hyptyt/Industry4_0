@@ -1,0 +1,82 @@
+﻿@model Industry4_0.Models.EmergingTechnologiesFeedback
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h3>Emerging Technologies Feedback</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" readonly/>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" readonly/>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Heading" class="control-label"></label>
+                <input asp-for="Heading" class="form-control" placeholder="Enter a topic for your feedback"/>
+                <span asp-validation-for="Heading" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmergingTechnologies" class="control-label"></label>
+                <input asp-for="EmergingTechnologies" class="form-control" />
+                <span asp-validation-for="EmergingTechnologies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Feedback" class="control-label"></label>
+                <input asp-for="Feedback" class="form-control" placeholder="Enter your feedback here"/>
+                <span asp-validation-for="Feedback" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agree" class="control-label"></label>
+                <input asp-for="Agree" class="form-control" />
+                <span asp-validation-for="Agree" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Disagree" class="control-label"></label>
+                <input asp-for="Disagree" class="form-control" />
+                <span asp-validation-for="Disagree" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="~/Home/EmergingTechnologies/#feedback">Back to Emerging Technologies</a>
+</div>
+<br />
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<style>
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>

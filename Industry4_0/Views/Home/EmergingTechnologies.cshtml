@@ -1,0 +1,452 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Emerging Technologies";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="title">Emerging Technologies</div>
+<div class="subtitle" style="color:#444444; padding-bottom: 5%;">Industry 4.0 combines several physical and digital technologies, including robotics, artificial intelligence, cognitive technologies, internet of things, cloud computing and blockchains. Here's are a few example of the leading companies for each technologies.</div>
+<div class="video">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/HPRURtORnis" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<hr class="line" />
+<div class="title" id="aititle">Artificial Intelligence</div>
+<div id="ai"></div>
+<hr class="line" />
+<div class="title" id="iottitle">Internet Of Things</div>
+<div id="iot"></div>
+<hr class="line" />
+<div class="title" id="cstitle">Cognitive Services</div>
+<div id="cs"></div>
+<hr class="line" />
+<div class="title" id="cctitle">Cloud Computing</div>
+<div id="cc"></div>
+<hr class="line" />
+<div class="title" id="rbtitle">Robotics</div>
+<div id="rb"></div>
+<hr class="line" />
+<div class="title" id="bctitle">Blockchains</div>
+<div id="bc"></div>
+
+<div class="title" id="feedback">Feedback</div>
+
+<div class="fb">
+    @{
+        if (User.IsInRole("Administrator") || User.IsInRole("User"))
+        {
+            <a class="btn post" href="~/EmergingTechnologiesFeedbacks/Create">Submit your feedback</a>
+        }
+        else
+        {
+            <div style="text-align:center">Please <a href="~/Account/Login?ReturnUrl=~/Home/EmergingTechnologies/#feedback">login</a> or <a href="~/Account/Register">create an account</a> to post of this page!</div>
+        }
+    }
+    @model IEnumerable<Industry4_0.Models.EmergingTechnologiesFeedback>
+
+
+    @{
+        int index = 1;
+        @foreach (var item in Model)
+        {
+
+            <h2>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </h2>
+            <h3>
+                @Html.DisplayFor(modelItem => item.EmergingTechnologies)
+            </h3>
+            <h4>
+                @Html.DisplayFor(modelItem => item.Rating)
+                @{
+                    int numStars = item.Rating;
+                    for (int i = 0; i < numStars; i++)
+                    {
+                        <span style="color: #f8bd08; ">&#x2605;</span>
+                    }
+                    for (int i = 0; i < 5 - numStars; i++)
+                    {
+                        <span>&#x2606;</span>
+                    }
+                }
+
+            </h4>
+            <p>
+                @Html.DisplayFor(modelItem => item.Feedback)
+            </p>
+            <div>
+                Feedback by @Html.DisplayFor(modelItem => item.Username) on @Html.DisplayFor(modelItem => item.Date)
+            </div>
+            <div style="margin-top: 20px">
+
+                <a asp-controller="EmergingTechnologiesFeedbacks" asp-action="Details" asp-route-id="@item.ID" class="btn btn-default">Details</a>
+                <a asp-controller="EmergingTechnologiesFeedbacks" asp-action="Agree" asp-route-id="@item.ID" class="agree btn greenbtn">Agree (@Html.DisplayFor(modelItem => item.Agree))</a>
+                <a asp-controller="EmergingTechnologiesFeedbacks" asp-action="Disagree" asp-route-id="@item.ID" class="disagree btn redbtn">Disagree (@Html.DisplayFor(modelItem => item.Disagree))</a>
+
+                @{
+                    if (User.IsInRole("Administrator"))
+                    {
+                        <div class="pull-right">
+                            <a asp-controller="EmergingTechnologiesFeedbacks" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-default">Edit</a>
+                            <a asp-controller="EmergingTechnologiesFeedbacks" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-default" onclick="return confirm('Are you sure you want to delete this file?')">Delete</a>
+                        </div>
+                    }
+                }
+            </div>
+
+            index++;
+            <hr class="line" />
+        }
+    }
+</div>
+
+
+<!-- Elastic grid -->
+
+<script>
+    $(function () {
+        $("#ai").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'IBM AI<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4>IBM AI</h4>',
+                        'thumbnail': ['/images/Technologies/ibmwatson_small.jpg'],
+                        'large': ['/images/Technologies/ibmwatson.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.ibm.com/watson/', 'new_window': true },
+                            ],
+                        'tags': ['Artificial Intelligence']
+                    },
+
+                    {
+                        'title': 'Microsoft AI<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4>Microsoft AI</h4>',
+                        'thumbnail': ['/images/Technologies/microsoft_small.jpg'],
+                        'large': ['/images/Technologies/microsoft.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai?activetab=pivot1%3aprimaryr5', 'new_window': true },
+                            ],
+                        'tags': ['Artificial Intelligence']
+                    },
+
+                    {
+                        'title': 'CSIRO AI<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/csiro_small.jpg'],
+                        'large': ['/images/Technologies/csiro.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://data61.csiro.au/en/Our-Work/AI-and-Machine-Learning', 'new_window': true },
+                            ],
+                        'tags': ['Artificial Intelligence']
+                    },
+
+                    {
+                        'title': 'Amazon AI<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4>Amazon AI</h4>',
+                        'thumbnail': ['/images/Technologies/amazon_small.jpg'],
+                        'large': ['/images/Technologies/amazon.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/', 'new_window': true },
+                            ],
+                        'tags': ['Artificial Intelligence']
+                    }
+                ]
+        });
+    });
+    $(function () {
+        $("#iot").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'IBM IOT<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/ibm_small.jpg'],
+                        'large': ['/images/Technologies/ibm.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.ibm.com/blogs/internet-of-things/industry-4-0/', 'new_window': true },
+                            ],
+                        'tags': ['IOT']
+                    },
+
+                    {
+                        'title': 'Microsoft IOT<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/microsoft_small.jpg'],
+                        'large': ['/images/Technologies/microsoft.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-au/internet-of-things/', 'new_window': true },
+                            ],
+                        'tags': ['IOT']
+                    },
+
+                    {
+                        'title': 'Amazon IOT<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/amazon_small.jpg'],
+                        'large': ['/images/Technologies/amazon.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/iot/?sc_channel=PS&sc_campaign=acquisition_AU&sc_publisher=google&sc_medium=iot_nb&sc_content=iot_e&sc_detail=iot&sc_category=iot&sc_segment=154387165862&sc_matchtype=e&sc_country=AU&s_kwcid=AL!4422!3!154387165862!e!!g!!iot&ef_id=WmksLwAAAHVHXlHa:20180805102347:s', 'new_window': true },
+                            ],
+                        'tags': ['IOT']
+                    },
+
+                    {
+                        'title': 'CIO IOT<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/cio_small.jpg'],
+                        'large': ['/images/Technologies/cio.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.cio.com.au/article/641518/feds-launch-ai-iot-projects/', 'new_window': true },
+                            ],
+                        'tags': ['IOT']
+                    }
+                ]
+        });
+    });
+    $(function () {
+        $("#cs").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'IBM Cognitive services<hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/ibm_small.jpg'],
+                        'large': ['/images/Technologies/ibm.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.ibm.com/services/artificial-intelligence', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    }, {
+                        'title': 'Microsoft <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/microsoft_small.jpg'],
+                        'large': ['/images/Technologies/microsoft.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://azure.microsoft.com/en-au/services/cognitive-services/', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    }, {
+                        'title': 'Google <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/google_small.jpg'],
+                        'large': ['/images/Technologies/google.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://cloud.google.com/vision/', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/forbes_small.jpg'],
+                        'large': ['/images/Technologies/forbes.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#71f7d93c5088', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+                ]
+        });
+    });
+    $(function () {
+        $("#cc").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'Google <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/google_small.jpg'],
+                        'large': ['/images/Technologies/google.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://cloud.google.com/solutions/iot/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    }, {
+                        'title': 'Microsoft <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/microsoft_small.jpg'],
+                        'large': ['/images/Technologies/miscrosoft.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://azure.microsoft.com/en-au/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    }, {
+                        'title': 'IBM <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/ibm_small.jpg'],
+                        'large': ['/images/Technologies/ibm.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.ibm.com/cloud/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    }, {
+                        'title': 'Amazon <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/amazon_small.jpg'],
+                        'large': ['/images/Technologies/amazon.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    },
+                ]
+        });
+    });
+    $(function () {
+        $("#rb").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/forbes_small.jpg'],
+                        'large': ['/images/Technologies/forbes.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/jimlawton/2018/03/20/the-role-of-robots-in-industry-4-0/#566918b5706b', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    }, {
+                        'title': 'ZDNet <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/zdnet_small.jpg'],
+                        'large': ['/images/Technologies/zdnet.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.zdnet.com/article/robotics-and-industry-4-0/', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    }, {
+                        'title': 'I-Scoop <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/iscoop_small.jpg'],
+                        'large': ['/images/Technologies/iscoop.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.i-scoop.eu/robots-cobots-logistics-4-0/', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    }, {
+                        'title': 'Automation World <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/aw_small.jpg'],
+                        'large': ['/images/Technologies/aw.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.automationworld.com/industry-40-here-are-you-ready', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    },
+                ]
+        });
+    });
+    $(function () {
+        $("#bc").elastic_grid({
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 364,
+            'items':
+                [
+                    {
+                        'title': 'Blockchain <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/blockchain_small.jpg'],
+                        'large': ['/images/Technologies/blockchain.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.blockchain.com/', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    }, {
+                        'title': 'PC Magazine <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/pc_small.jpg'],
+                        'large': ['/images/Technologies/pc.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://au.pcmag.com/amazon-web-services/46389/feature/blockchain-the-invisible-technology-thats-changing-the-world', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/forbes_small.jpg'],
+                        'large': ['/images/Technologies/forbes.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/andrewrossow/2018/04/11/bringing-blockchain-into-industry-4-0/#1be964566dc7', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    }, {
+                        'title': 'CSIRO <hr/> <a class="btn btn1 btn-primary">More Details</a>',
+                        'description': '<h4></h4>',
+                        'thumbnail': ['/images/Technologies/csiro_small.jpg'],
+                        'large': ['/images/Technologies/csiro.jpg'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.data61.csiro.au/en/our-work/safety-and-security/secure-systems-and-platforms/blockchain', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+
+                ]
+        });
+    });
+</script>
+<style>
+    .fbtn {
+        align-content: center;
+    }
+</style>

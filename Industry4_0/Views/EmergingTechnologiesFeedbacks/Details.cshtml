@@ -1,0 +1,88 @@
+﻿@model Industry4_0.Models.EmergingTechnologiesFeedback
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h3>Emerging Technologies Feedback</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Heading)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Heading)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergingTechnologies)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmergingTechnologies)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Agree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Agree)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Disagree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Disagree)
+        </dd>
+    </dl>
+</div>
+<div>
+    @{
+        if (User.IsInRole("Administrator"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-default">Edit</a> 
+        }
+    }
+            <div>
+                <a href="~/Home/EmergingTechnologies/#feedback">Back to Emerging Technologies</a>
+            </div>
+</div>
+<style>
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>

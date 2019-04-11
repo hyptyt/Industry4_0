@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<div class="contact"></div>
+<div class="contact">
+    <div class="intro">
+        <div>Contact & About</div>
+        <p class="subtitle">This webpage contains information about the website, how to contact the developer and other things such as privacy, jobs and copyrights of materials used in the website.</p>
+    </div>
+</div>
+<div class="contact"></div>
+
+<div class="title" id="about">About Us</div>
+<div class="subtitle">This website was created for the Assignment 1 of Web Design And Programming Unit. It will not be published and used for any commercial purpose.</div>
+
+<div class="title" id="contact">Contact Us</div>
+<ul id="contact-icons" style="align-items:center">
+    <li><a href="https://www.plus.google.com" class=" icon fa fa-google" style="font-size:50px;" title="Follow us on Google Plus"></a></li>
+    <li><a href="https://www.youtube.com" class="icon fa fa-youtube" style="font-size:50px;" title="Follow us on Youtube"></a></li>
+    <li><a href="https://www.twitter.com" class="icon fa fa-twitter" style="font-size:50px;" title="Follow us on Twitter"></a></li>
+    <li><a href="https://www.facebook.com" class="icon fa fa-facebook" style="font-size:50px;" title="Follow us on Facebook"></a></li>
+    <li><a href="https://www.linkedin.com" class="icon fa fa-linkedin" style="font-size:50px;" title="Follow us on LinkedIn"></a></li>
+</ul>
+<div class="title" id="privacy">Privacy</div>
+<div class="subtitle">All the information collected from users will be kept secret by the website.</div>
+
+<div class="title" id="Jobs">Jobs</div>
+<div class="subtitle">This website does not offer any job opportunity but users can find more information about Jobs in the Industry 4.0 <a href="https://www.linkedin.com/jobs/industry-4.0-insights-jobs" style="color:dodgerblue">here</a>.</div>
+
+<div class="title" id="copyright">Copyright</div>
+<div class="subtitle">
+    All the images used in Homepage, Companies and Organizations, Map and Contact & About pages were downloaded from <a href="https://www.unsplash.com" style="color:dodgerblue">Unsplash</a>. <br />
+    All the icons and images used in Emerging Technologies page were downloaded from <a href="https://pngtree.com/" style="color:dodgerblue">PNGTree</a>.<br />
+    All the icons used in footer and contact page were shared by <a href="https://www.w3schools.com" style="color:dodgerblue">W3Schools</a>.<br />
+    The font used for this website is Opens Sans, which is shared by <a href="https://www.fonts.google.com" style="color:dodgerblue">Google Fonts</a>.
+</div>
+
+<div class="title">Feedback</div>
+<style>
+    .icon:hover {
+        color: dodgerblue;
+    }
+
+    #contact-icons {
+        text-align: center;
+        list-style: none;
+    }
+
+        #contact-icons > li {
+            display: inline-block;
+        }
+
+    @@media (min-width: 1281px) {
+        .contact {
+            height: 250px;
+        }
+    }
+
+    @@media (min-width: 1025px) and (max-width:1280px) {
+        .contact {
+            height: 220px;
+        }
+    }
+
+    @@media (min-width: 768px) and (max-width: 1024px) {
+        .contact {
+            height: 170px;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        .contact {
+            height: 125px;
+        }
+    }
+</style>

@@ -1,0 +1,114 @@
+H:/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+H:/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+H:/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+H:/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+H:/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+H:/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+H:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+H:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+H:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+H:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+H:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+H:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/Linh tinh/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+/Volumes/LONG 1/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+E:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+E:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+E:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+E:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+E:/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+E:/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/USB/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+E:/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.deps.json
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.json
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.runtimeconfig.dev.json
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/bin/Debug/netcoreapp2.0/Industry4.0.pdb
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csprojAssemblyReference.cache
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.csproj.CoreCompileInputs.cache
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfoInputs.cache
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.AssemblyInfo.cs
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.dll
+/Users/longnguyen/Desktop/untitled folder/Industry4.0/Industry4.0/Industry4.0/Industry4.0/obj/Debug/netcoreapp2.0/Industry4.0.pdb
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\bin\Debug\netcoreapp2.0\Industry4.0.deps.json
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\bin\Debug\netcoreapp2.0\Industry4.0.runtimeconfig.json
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\bin\Debug\netcoreapp2.0\Industry4.0.runtimeconfig.dev.json
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\bin\Debug\netcoreapp2.0\Industry4.0.dll
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\bin\Debug\netcoreapp2.0\Industry4.0.pdb
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.csprojAssemblyReference.cache
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.csproj.CoreCompileInputs.cache
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.AssemblyInfoInputs.cache
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.AssemblyInfo.cs
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.dll
+C:\Teaching\WDPA1\Industry4.0\Industry4.0\Industry4.0\Industry4.0\obj\Debug\netcoreapp2.0\Industry4.0.pdb

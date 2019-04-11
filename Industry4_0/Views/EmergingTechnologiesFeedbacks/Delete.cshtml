@@ -1,0 +1,72 @@
+﻿@model Industry4_0.Models.EmergingTechnologiesFeedback
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete a feedback</h2>
+
+<h2>Are you sure you want to delete this?</h2>
+<div>
+    <h4>Emerging Technologies Feedback</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Heading)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Heading)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergingTechnologies)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmergingTechnologies)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn redbtn" /> |
+        <a href="~/Home/EmergingTechnologies/#feedback">Back to Emerging Technologies</a>
+    </form>
+</div>
+<style>
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>

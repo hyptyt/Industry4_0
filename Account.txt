@@ -1,0 +1,4 @@
+Roles: Administrator, User
+
+Administrator account: admin@wdp.com - Wdp2018!
+User account: user@wdp.com - Wdp2018!

@@ -1,0 +1,260 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ /**/
+                /**/
+                /**/
+                /**/
+                /**/
+                /**/
+                ViewData["Title"] = "Map";
+}
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUk57FPVAXBa3m2_Mw0CDNI51sLVW9o10"></script>
+
+<script>
+    // Declare a variable for map
+
+    var map;
+
+    var worldCentre = new google.maps.LatLng(51.5073509, -0.1277583);
+
+    // Initialise the map
+    function initMap() {
+        var worldMap =
+            {
+                center: worldCentre,
+                zoom: 2,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+        map = new google.maps.Map(
+            document.getElementById("googleMap"), worldMap);
+
+        // Add markers below this line
+        addGoogleMarker(map);
+        addAmazon(map);
+        addMicrosoft(map);
+        addIBM(map);
+        addCSIRO(map);
+        addDepartment(map);
+    }
+
+
+    // Add other functions below this line
+    function addGoogleMarker(map) {
+        var Google = new google.maps.LatLng(37.4134391, -122.1513074);
+        var markerGoogle = new google.maps.Marker({
+            position: Google,
+        });
+
+        markerGoogle.setMap(map);
+
+        var contentGoogle =
+            ' <h1>Google</h1>' +
+            ' <img src="../images/Map/google.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>Google</b> is an American multinational technology' +
+            ' company that specializes in Internet-related services and' +
+            ' products, which include online advertising technologies, search engine, cloud computing, software, and hardware. <br>' +
+            '<a href="https://en.wikipedia.org/wiki/Google">Wikipedia</a>' +
+            ' </p>';
+
+        var infoGoogle = new google.maps.InfoWindow({
+            content: contentGoogle
+        });
+
+        google.maps.event.addListener(markerGoogle, 'click', function () {
+            infoGoogle.open(map, markerGoogle);
+        });
+    }
+
+    function addAmazon(map) {
+        var Amazon =
+            new google.maps.LatLng(47.6202295, -122.3663777);
+        var markerAmazon = new google.maps.Marker({
+            position: Amazon,
+        });
+
+        markerAmazon.setMap(map);
+
+        var contentAmazon =
+            ' <h1>Amazon</h1>' +
+            ' <img src="../images/Map/amazon.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>Amazon</b> is an American electronic commerce and cloud' +
+            ' computing company based in Seattle, Washington, that was founded' +
+            ' by Jeff Bezos on July 5, 1994. The tech giant is the largest' +
+            ' Internet retailer in the world as measured by revenue and market' +
+            ' capitalization, and second largest after Alibaba Group in terms of total sales.<br>' +
+            '<a href="https://en.wikipedia.org/wiki/Amazon_(company)">Wikipedia</a>' +
+            ' </p>';
+
+        var infoAmazon = new google.maps.InfoWindow({
+            content: contentAmazon
+        });
+
+        google.maps.event.addListener(markerAmazon, 'click',
+            function () {
+                infoAmazon.open(map, markerAmazon);
+            });
+    }
+    function addMicrosoft(map) {
+
+        var Microsoft =
+            new google.maps.LatLng(47.6418102, -122.1356387);
+        var markerMicrosoft = new google.maps.Marker({
+            position: Microsoft,
+        });
+
+        markerMicrosoft.setMap(map);
+
+        var contentMicrosoft =
+            ' <h1>Microsoft</h1>' +
+            ' <img src="../images/Map/microsoft.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>Microsoft</b> is an American multinational technology company' +
+            ' with headquarters in Redmond, Washington. It develops, manufactures,' +
+            ' licenses, supports and sells computer software, consumer electronics, personal computers, and related services.<br>' +
+            '<a href="https://en.wikipedia.org/wiki/Microsoft">Wikipedia</a>' +
+            ' </p>';
+
+        var infoMicrosoft = new google.maps.InfoWindow({
+            content: contentMicrosoft
+        });
+
+        google.maps.event.addListener(markerMicrosoft, 'click',
+            function () {
+                infoMicrosoft.open(map, markerMicrosoft);
+            });
+    }
+    function addIBM(map) {
+
+        var IBM =
+            new google.maps.LatLng(41.108922, -73.7210637);
+        var markerIBM = new google.maps.Marker({
+            position: IBM,
+        });
+
+        markerIBM.setMap(map);
+
+        var contentIBM =
+            ' <h1>IBM</h1>' +
+            ' <img src="../images/Map/ibm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>IBM</b> is an American multinational technology company' +
+            ' headquartered in Armonk, New York, United States, with operations in over 170 countries.<br>' +
+            '<a href="https://en.wikipedia.org/wiki/IBM">Wikipedia</a>' +
+            ' </p>';
+
+        var infoIBM = new google.maps.InfoWindow({
+            content: contentIBM
+        });
+
+        google.maps.event.addListener(markerIBM, 'click',
+            function () {
+                infoIBM.open(map, markerIBM);
+            });
+    }
+    function addCSIRO(map) {
+        var CSIRO =
+            new google.maps.LatLng(-35.2748314, 149.1120457);
+        var markerCSIRO = new google.maps.Marker({
+            position: CSIRO,
+        });
+
+        markerCSIRO.setMap(map);
+
+        var contentCSIRO =
+            ' <h1>CSIRO</h1>' +
+            ' <img src="../images/Map/csiro.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>CSIRO</b> is an independent Australian federal government' +
+            ' agency responsible for scientific research. Its chief role is to improve' +
+            ' the economic and social performance of industry for the benefit of the community.<br>' +
+            '<a href="https://en.wikipedia.org/wiki/CSIRO">Wikipedia</a>' +
+            ' </p>';
+
+        var infoCSIRO = new google.maps.InfoWindow({
+            content: contentCSIRO
+        });
+
+        google.maps.event.addListener(markerCSIRO, 'click',
+            function () {
+                infoCSIRO.open(map, markerCSIRO);
+            });
+    } function addDepartment(map) {
+        var Department =
+            new google.maps.LatLng(-35.2817775, 149.1318781);
+        var markerDepartment = new google.maps.Marker({
+            position: Department,
+        });
+
+        markerDepartment.setMap(map);
+
+        var contentDepartment =
+            ' <h1>Department of Industry, Innovation and Science</h1>' +
+            ' <img src="../images/Map/department.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b>Department of Industry, Innovation and Science </b> is' +
+            ' a department of the Australian Government responsible for consolidating' +
+            ' the Government’s efforts to drive economic growth, productivity and competitiveness' +
+            ' by bringing together industry, energy, resources and science.<br>' +
+            '<a href="https://en.wikipedia.org/wiki/Department_of_Industry,_Innovation_and_Science">Wikipedia</a>' +
+            ' </p>';
+
+        var infoDepartment = new google.maps.InfoWindow({
+            content: contentDepartment
+        });
+
+        google.maps.event.addListener(markerDepartment, 'click',
+            function () {
+                infoDepartment.open(map, markerDepartment);
+            });
+    }
+    // Add a DOM listener that will execute the initMap function
+    // on window load (when the page is loaded)
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+
+
+<div class="map"></div>
+<div class="map">
+    <div class="intro" style="height: 200px">
+        <div>Map</div>
+        <p class="subtitle">The maps contains locations of the 6 leading companies and organizations in the Industry 4.0.</p>
+    </div>
+</div>
+<div class="map"></div>
+
+@* The div element below is to display Google Map*@
+<div id="googleMap" style="width:100%;height:680px;"></div>
+
+<div class="title">Feedback</div>
+<p> Please <a href="~/Account/Login">log in</a> or <a href="~/Account/Register">create an account</a> to post your feedback on this page.</p>
+
+<style>
+    @@media (min-width: 1281px) {
+        .map {
+            height: 250px;
+        }
+    }
+
+    @@media (min-width: 1025px) and (max-width:1280px) {
+        .map {
+            height: 220px;
+        }
+    }
+
+    @@media (min-width: 768px) and (max-width: 1024px) {
+        .map {
+            height: 170px;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        .map {
+            height: 125px;
+        }
+    }
+</style>

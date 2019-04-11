@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{8AF9F7F8-4235-4688-950D-F3AB18EC52D3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Industry4_0/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="Industry4_0/Models/CompaniesFeedback.cs" Line="13" Column="34" />
+      <File FileName="Industry4_0/Views/Home/EmergingTechnologies.cshtml" Line="1" Column="1" />
+      <File FileName="Industry4_0/Views/Home/Index.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Industry4_0" expanded="True">
+            <Node name="Industry4_0" expanded="True">
+              <Node name="Extensions" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Industry4__0 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

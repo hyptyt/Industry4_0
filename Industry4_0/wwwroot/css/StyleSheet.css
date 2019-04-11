@@ -1,0 +1,295 @@
+﻿/*Body*/
+.icon:hover {
+    text-decoration: none;
+}
+
+.subtitle {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 300px;
+}
+
+figure {
+    position: relative;
+    align-items: center;
+}
+
+figcaption {
+    width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    visibility: hidden;
+    color: white;
+}
+
+figure:hover > figcaption {
+    visibility: visible;
+}
+
+figure:hover > img {
+    filter: brightness(0.8);
+}
+
+.btn1 {
+    padding: 2px 4px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+}
+
+    .btn1:hover {
+        border-color: dodgerblue;
+        color: dodgerblue;
+    }
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.title {
+    font-weight: 400;
+    text-align: center;
+    padding: 2% 5%;
+}
+
+@media (min-height: 1001px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .title {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1281px) {
+    .intro > div {
+        font-size: 64px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1280px) {
+    .intro > div {
+        font-size: 5vw;
+    }
+
+    .subtitle {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro > div {
+        font-size: 5vw;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+}
+
+/*Footer*/
+footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #9d9d9d;
+    background-color: #222;
+}
+
+    footer > nav > div > div > ul {
+        padding: 2% 10%;
+    }
+
+        footer > nav > div > div > ul > li {
+            color: white;
+        }
+
+.links {
+    color: #9d9d9d;
+}
+
+    .links:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+ul {
+    margin-bottom: 0px;
+}
+
+    ul > li {
+        list-style: none;
+    }
+
+/*Homepage*/
+
+.industry {
+    background-image: url(../images/Homepage/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.industry2 {
+    height: 800px;
+    background-image: url(../images/Homepage/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.intro {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: rgba(255,255,255,0);
+    color: white;
+}
+
+/*Emerging Technologies*/
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn1 {
+    align-items: center;
+    padding: 0 20px;
+}
+
+    .btn1 > a {
+        padding: 5px 20px;
+        margin: 5px 10px;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #444444;
+    }
+
+        .btn1 > a:hover {
+            background-color: gray;
+            color: white;
+        }
+/*Map*/
+.map {
+    background-image: url(../images/Map/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+/*Contact*/
+
+.contact {
+    background-image: url(../images/Contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+/*Icons in footer*/
+#icons > a {
+    padding: 0 5px;
+}
+
+#icons > .fa {
+    width: 10px;
+}
+
+.fa {
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+    font-size: 30px;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px 15px;
+    border-radius: 50%;
+}
+
+    .fa:hover {
+        color: dodgerblue;
+    }
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-google {
+    color: #dd4b39;
+}
+
+.fa-linkedin {
+    color: #007bb5;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+/*feedback*/
+.fb {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.post {
+    background-color: #43C6DB;
+    color: white;
+}
+    .post:hover {
+        background-color: #3B9C9C;
+        color: white;
+    }
+.greenbtn {
+    color: white;
+    background-color: #4CC417;
+}
+    .greenbtn:hover {
+        background-color: #348017;
+        color: white;
+        text-decoration: none;
+    }
+
+.redbtn {
+    color: white;
+    background-color: #F75D59;
+}
+    .redbtn:hover {
+        background-color: #FF2400;
+        color: white;
+        text-decoration: none;
+    }
+.line {
+    background-color: #333;
+    height: 2px;
+    padding-left: -50px;
+    padding-right: -50px;
+}

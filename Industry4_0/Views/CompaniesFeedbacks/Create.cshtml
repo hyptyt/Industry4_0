@@ -1,0 +1,81 @@
+﻿@model Industry4_0.Models.CompaniesFeedback
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>CompaniesFeedback</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" readonly />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" readonly />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Heading" class="control-label"></label>
+                <input asp-for="Heading" class="form-control" placeholder="Enter a topic for your feedback"/>
+                <span asp-validation-for="Heading" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Companies" class="control-label">Companies And Organizations</label>
+                <select asp-for="Companies" class="form-control">
+                    <option value="" selected disabled>Select a company or an organization</option>
+                    <option>IBM</option>
+                    <option>Amazon</option>
+                    <option>Google</option>
+                    <option>Microsoft</option>
+                    <option>CSIRO</option>
+                    <option>Department Of Industry, Innovation and Science</option>
+                </select>
+                <span asp-validation-for="Companies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Feedback" class="control-label"></label>
+                <textarea asp-for="Feedback" class="form-control" rows="5" placeholder="Enter your feedback here"></textarea>
+                <span asp-validation-for="Feedback" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="~/Home/CompaniesAndOrganizations/#feedback">Back to Companies and Organizations</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<style>
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>
